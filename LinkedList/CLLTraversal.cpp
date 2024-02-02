@@ -6,29 +6,40 @@ struct Node{
     struct Node *next;
 };
 
+void traversal(struct Node *head){
+    struct Node *ptr = head;
+    do{
+        cout << "Element: " << ptr->data <<endl;
+        ptr = ptr->next;
+    }while(ptr!=head);
+}
+
  //inserting node at the first position of the list
 struct Node* insertAtFirst(struct Node *head, int data){
     struct Node *ptr = (struct Node*)malloc(sizeof(struct Node));
-    ptr->next = head;
     ptr->data = data;
+    
+    struct Node *p = head -> next;
+    while (p->next!= head){
+        p= p->next;
+    }
 
-    return ptr;
+    //At this point p points to the last node of this circular linked list
+    p -> next = ptr;
+    ptr -> next = head;
+    return head;
 };
 
-void traversal(struct Node *ptr){
-    while(ptr!=NULL){
-        cout << "Element: " << ptr->data <<endl;
-        ptr = ptr->next;
-    }
-}
-
 int main() {
-    // Memory allocation in the HEAP
+
+    // Memory allocation of the nodes in the HEAP
     struct Node *head = (struct Node*)malloc(sizeof(struct Node));
     struct Node *second= (struct Node*)malloc(sizeof(struct Node));
     struct Node *third= (struct Node*)malloc(sizeof(struct Node));
     struct Node *fourth= (struct Node*)malloc(sizeof(struct Node)); 
+    struct Node *fifth = (struct Node*)malloc(sizeof(struct Node));
     
+    //Link the nodes
     head->data =1;
     head->next = second;
     
@@ -39,16 +50,17 @@ int main() {
     third->next = fourth;
     
     fourth->data = 4;
-    fourth->next =NULL;
+    fourth->next =fifth;
 
-    cout <<"Before insertion: "<< endl ;
-    traversal(head);
-    cout << endl;
+    fifth->data = 5;
+    fifth->next =head;
     
-    head = insertAtFirst(head, 0);
-    cout <<"After insertion: "<< endl ;
-
+    cout << "Traversal before insertion: "<< endl;
     traversal(head);
 
+    head = insertAtFirst(head, 800);
+    cout << "Traversal after insertion: "<< endl;
+    traversal(head);
+   
     return 0;
 }

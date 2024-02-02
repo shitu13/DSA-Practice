@@ -5,17 +5,6 @@ struct Node{
     struct Node *next;
 };
 
- //inserting node after a particular node
-struct Node* insertAfterNode(struct Node *head, struct Node *prevNode, int data){
-    struct Node *ptr = (struct Node*)malloc(sizeof(struct Node));
-    
-    ptr->data = data;
-    ptr->next = prevNode->next;
-    prevNode->next = ptr;
-
-    return head;
-};
-
 void traversal(struct Node *ptr){
     while(ptr!=NULL){
         cout << "Element: " << ptr->data <<endl;
@@ -23,14 +12,23 @@ void traversal(struct Node *ptr){
     }
 }
 
+//Deleting the first element from the linked list
+struct Node *deleteFirstNode(struct Node *head){
+    struct Node *ptr =head;
+    head = head -> next;
+    free(ptr);
+    return head;
+}
+
 int main() {
-    
-    // Memory allocation in the HEAP
+
+    // Memory allocation of the nodes in the HEAP
     struct Node *head = (struct Node*)malloc(sizeof(struct Node));
     struct Node *second= (struct Node*)malloc(sizeof(struct Node));
     struct Node *third= (struct Node*)malloc(sizeof(struct Node));
     struct Node *fourth= (struct Node*)malloc(sizeof(struct Node)); 
     
+    //Link the nodes
     head->data =1;
     head->next = second;
     
@@ -42,14 +40,14 @@ int main() {
     
     fourth->data = 4;
     fourth->next =NULL;
-
-    cout <<"Before insertion: "<< endl ;
+    
+    cout <<"Before deletion: "<< endl ;
     traversal(head);
     cout << endl;
 
+    cout <<"After deletion: "<< endl ;
 
-    head = insertAfterNode(head, third, 50);
-    cout <<"After insertion: "<< endl ;
+    head = deleteFirstNode(head);
     traversal(head);
 
     return 0;

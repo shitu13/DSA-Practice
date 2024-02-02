@@ -49,7 +49,13 @@ int main() {
     fourth->data = 4;
     fourth->next =NULL;
     
+    cout <<"Before insertion: "<< endl ;
+    traversal(head);
+    cout << endl;
+
     head = insertAtIndex(head, 80, 2);
+    cout <<"After insertion: "<< endl ;
+
     traversal(head);
 
     return 0;
