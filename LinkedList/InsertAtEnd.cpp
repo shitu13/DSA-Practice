@@ -7,7 +7,7 @@ struct Node{
 
  //inserting node at the End of the list
 struct Node* insertAtEnd(struct Node *head, int data){
-    struct Node *ptr = (struct Node*)malloc(sizeof(struct Node));
+    struct Node *ptr = new Node;
     ptr->next =head;
     ptr->data = data;
     struct Node *p =head;
@@ -28,10 +28,10 @@ void traversal(struct Node *ptr){
 
 int main() {
     // Memory allocation in the HEAP
-    struct Node *head = (struct Node*)malloc(sizeof(struct Node));
-    struct Node *second= (struct Node*)malloc(sizeof(struct Node));
-    struct Node *third= (struct Node*)malloc(sizeof(struct Node));
-    struct Node *fourth= (struct Node*)malloc(sizeof(struct Node)); 
+    struct Node *head = new Node;
+    struct Node *second= new Node;
+    struct Node *third= new Node;
+    struct Node *fourth= new Node; 
     
     head->data =1;
     head->next = second;

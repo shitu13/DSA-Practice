@@ -24,10 +24,10 @@ void traversalrev(struct Node *ptr){
 int main() {
     
     // Memory allocation in the HEAP
-    struct Node *N1 = (struct Node*)malloc(sizeof(struct Node));
-    struct Node *N2= (struct Node*)malloc(sizeof(struct Node));
-    struct Node *N3 = (struct Node*)malloc(sizeof(struct Node));
-    struct Node *N4 = (struct Node*)malloc(sizeof(struct Node));
+    struct Node *N1 = new Node;
+    struct Node *N2= new Node;
+    struct Node *N3 = new Node;
+    struct Node *N4 = new Node;
 
     N1 ->data =1;
     N1->next = N2;

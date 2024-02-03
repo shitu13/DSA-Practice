@@ -14,7 +14,7 @@ void traversal(struct Node *ptr){
  //inserting node at the given index the list
 
 struct Node *insertAtIndex(struct Node *head, int data, int index){
-    struct Node *ptr = (struct Node*)malloc(sizeof(struct Node));
+    struct Node *ptr = new Node;
     struct Node *p = head;
     int i = 0;
 
@@ -32,10 +32,10 @@ struct Node *insertAtIndex(struct Node *head, int data, int index){
 
 int main() {
     // Memory allocation in the HEAP
-    struct Node *head = (struct Node*)malloc(sizeof(struct Node));
-    struct Node *second= (struct Node*)malloc(sizeof(struct Node));
-    struct Node *third= (struct Node*)malloc(sizeof(struct Node));
-    struct Node *fourth= (struct Node*)malloc(sizeof(struct Node)); 
+    struct Node *head = new Node;
+    struct Node *second= new Node;
+    struct Node *third= new Node;
+    struct Node *fourth= new Node; 
     
     head->data =1;
     head->next = second;

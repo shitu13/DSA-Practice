@@ -16,7 +16,7 @@ void traversal(struct Node *head){
 
  //inserting node at the first position of the list
 struct Node* insertAtFirst(struct Node *head, int data){
-    struct Node *ptr = (struct Node*)malloc(sizeof(struct Node));
+    struct Node *ptr = new Node;
     ptr->data = data;
     
     struct Node *p = head -> next;
@@ -33,11 +33,11 @@ struct Node* insertAtFirst(struct Node *head, int data){
 int main() {
 
     // Memory allocation of the nodes in the HEAP
-    struct Node *head = (struct Node*)malloc(sizeof(struct Node));
-    struct Node *second= (struct Node*)malloc(sizeof(struct Node));
-    struct Node *third= (struct Node*)malloc(sizeof(struct Node));
-    struct Node *fourth= (struct Node*)malloc(sizeof(struct Node)); 
-    struct Node *fifth = (struct Node*)malloc(sizeof(struct Node));
+    struct Node *head = new Node;
+    struct Node *second= new Node;
+    struct Node *third= new Node;
+    struct Node *fourth= new Node; 
+    struct Node *fifth = new Node;
     
     //Link the nodes
     head->data =1;

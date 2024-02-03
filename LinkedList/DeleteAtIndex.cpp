@@ -33,10 +33,10 @@ struct Node *DeleteAtIndex (struct Node *head, int index){
 int main() {
 
     // Memory allocation of the nodes in the HEAP
-    struct Node *head = (struct Node*)malloc(sizeof(struct Node));
-    struct Node *second= (struct Node*)malloc(sizeof(struct Node));
-    struct Node *third= (struct Node*)malloc(sizeof(struct Node));
-    struct Node *fourth= (struct Node*)malloc(sizeof(struct Node)); 
+    struct Node *head = new Node;
+    struct Node *second= new Node;
+    struct Node *third= new Node;
+    struct Node *fourth= new Node; 
     
     //Link the nodes
     head->data =1;
