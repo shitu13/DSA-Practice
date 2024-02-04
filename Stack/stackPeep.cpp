@@ -43,6 +43,18 @@ int pop(struct stack *ptr){
     }
 }
 
+int peek(struct stack* sp, int i){
+    int arrayInd = sp->top -i + 1;
+    if(arrayInd < 0){
+        cout<< "Not a valid position for the stack";
+        return -1;
+    }
+    else{
+        return sp->arr[arrayInd];
+    }
+}
+
+
 
 int main()
 {
@@ -71,13 +83,12 @@ int main()
     push(sp, 6); // ---> Pushed 10 values 
    // push(sp, 46); // Stack Overflow since the size of the stack is 10
 
-    cout << "After pushing, Full: "<< isFull(sp) << endl;
 
-    cout << "Popped " << pop(sp) << " from the stack" << endl; // --> Last in first out!
-    cout << "Popped " << pop(sp) << " from the stack" << endl; // --> Last in first out!
-    cout << "Popped " << pop(sp) << " from the stack" << endl; // --> Last in first out!
-    
-
+    // Printing values from the stack
+    for (int j = 1; j <= sp->top + 1; j++)
+    {
+        cout<<"The value at position " << j << " is " <<peek(sp, j) << endl;
+    }
 
     return 0;
 }
