@@ -1,14 +1,14 @@
 #include<iostream>
 using namespace std;
 
-void printArray(int A[], int n){
+void printArray(int *A, int n){
     for (int i = 0; i < n; i++){
         cout << A[i] << " ";
     }
     cout << endl;
 }
 
-void conquer(int A[], int si, int mid, int ei){
+void conquer(int *A, int si, int mid, int ei){
 
     int merged[ei -si +1];
     int idx1 = si;
@@ -38,7 +38,7 @@ void conquer(int A[], int si, int mid, int ei){
 
 }
 
-void divide(int A[], int si, int ei){
+void divide(int *A, int si, int ei){
     if(si>=ei){
         return;
     }
