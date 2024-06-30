@@ -1,36 +1,34 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-void printArray(int* A, int n){
-    for (int i = 0; i < n; i++)
-    {cout << A[i] << " ";
-    }
-    cout << endl;
-}
-
-void selectionSort(int *A, int n){
-    for(int i=0; i<n-1; i++){
-            int indexofMin = i;
-
-            for (int j = i+1; j < n; j++)
-            {
-                if(A[j] < A[indexofMin])
-                indexofMin = j;
-            }
-
-            swap(A[i], A[indexofMin]);
-     }
-
-}
-
-int main()
-{
-    int A[]= {12, 20, 10, 18, 17, 9};
-    int n = 6;
+void selectionSort(int arr[], int n){
     
-    printArray(A, n);
-    selectionSort(A, n);
-    printArray(A, n);
+    for(int i=0; i<n-1; i++){
+        int minidx = i;
+        for(int j=i; j<n; j++){
+            if(arr[minidx]>arr[j])
+                minidx = j;
+        }
+        swap(arr[minidx], arr[i]);
+    }
+}
+
+int main() {
+    int size, key;
+    cout<< "Enter the size of the array: " <<endl;
+    cin >> size;
+    int arr[size];
+
+    cout<< "Enter " << size << " elements of the array: " <<endl;
+    for(int i=0; i<size; i++)
+        cin >>arr[i];
+
+    selectionSort(arr, size);
+    cout<< "Here is the sorted Array"<<endl;
+
+    for(int i=0; i<size; i++)
+        cout<<arr[i]<<" ";
+    
     
     return 0;
 }

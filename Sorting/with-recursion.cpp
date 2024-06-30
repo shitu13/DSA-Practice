@@ -1,19 +1,20 @@
+/// Bubble Sort with recursion
+
 #include <iostream>
 using namespace std;
 
-void bubbleSort(int arr[], int n){
-    bool swaped = false;
-    for(int i=1; i<n; i++){
-        int minidx = i;
-        for(int j=0; j<n-i; j++){
-           if(arr[j]>arr[j+1]){
+void bubbleSort(int* arr, int n){
+
+    //base case
+    if(n==0 or n==1)
+        return;
+
+    for(int j=0; j<n-1; j++){
+           if(arr[j]>arr[j+1])
               swap(arr[j],arr[j+1]);
-               swaped = true;
            }
-        }
-        if(!swaped)
-            break;
-    }
+
+    bubbleSort(arr+1, n-1);
 }
 
 int main() {
