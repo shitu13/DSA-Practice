@@ -1,2 +1,48 @@
 *.exe
 .vscode
+
+# Ignore all object files, shared libraries, and executables
+*.o
+*.obj
+*.so
+*.exe
+*.out
+*.dll
+
+# Ignore build directories
+build/
+Build/
+bin/
+Bin/
+debug/
+Debug/
+release/
+Release/
+
+# Ignore editor and IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.user
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+
+# Ignore generated documentation files
+*.html
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# Ignore system files
+.DS_Store
+Thumbs.db
