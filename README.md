@@ -51,33 +51,32 @@ Feel free to check out my profiles to see my progress and achievements on these 
 
 ### LeetCode
 
-[LeetCode](https://leetcode.com/) is a popular online platform for coding practice. It offers a variety of problems categorized by difficulty and topic. Our solutions for LeetCode problems can be found in the `LeetCode` directory.
+[LeetCode](https://leetcode.com/) is a popular online platform for coding practice. It offers a variety of problems categorized by difficulty and topic. Our solutions for LeetCode problems can be found in the [this directory](https://github.com/shitu13/DSA-Practice/tree/main/Array).
 
 ### Codeforces
 
-[Codeforces](https://codeforces.com/) is a competitive programming platform that hosts contests regularly. It provides a wide range of challenging problems. Solutions to Codeforces problems are available in the `Codeforces` directory.
+[Codeforces](https://codeforces.com/) is a competitive programming platform that hosts contests regularly. It provides a wide range of challenging problems. Solutions to Codeforces problems are available in [this directory](https://github.com/shitu13/CodeForces_solutions).
 
 ### HackerRank
 
-[HackerRank](https://www.hackerrank.com/) is another platform for practicing coding problems and participating in contests. Solutions to HackerRank problems are stored in the `HackerRank` directory.
-
+[HackerRank](https://www.hackerrank.com/) is another platform for practicing coding problems and participating in contests. Solutions to HackerRank problems are stored in [this directory](https://github.com/shitu13/HackerRank_solutions).
 ## Data Structures
 
 ### Arrays
 
-Arrays are a fundamental data structure used to store elements of the same type in contiguous memory locations. Check out my array implementations and problem solutions in the `DataStructures/Arrays` directory.
+Arrays are a fundamental data structure used to store elements of the same type in contiguous memory locations. Check out my array implementations and problem solutions in  [this directory](https://github.com/shitu13/DSA-Practice/tree/main/Array).
 
 ### Linked Lists
 
-Linked lists are linear data structures where elements are not stored at contiguous memory locations. Instead, each element points to the next. Visit the `DataStructures/LinkedLists` directory for implementations and problems.
+Linked lists are linear data structures where elements are not stored at contiguous memory locations. Instead, each element points to the next. Visit [this directory](https://github.com/shitu13/DSA-Practice/tree/main/LinkedListy)for implementations and problems.
 
 ### Stacks and Queues
 
-Stacks and queues are abstract data types that follow specific order principles (LIFO for stacks and FIFO for queues). Explore our implementations in the `DataStructures/StacksQueues` directory.
+Stacks and queues are abstract data types that follow specific order principles (LIFO for stacks and FIFO for queues). Explore our implementations in [this directory](https://github.com/shitu13/DSA-Practice/tree/main/StackAndQueue).
 
 ### Trees
 
-Trees are hierarchical data structures with nodes connected by edges. The `DataStructures/Trees` directory contains various tree implementations and related problems.
+Trees are hierarchical data structures with nodes connected by edges. [This directory](https://github.com/shitu13/DSA-Practice/tree/main/Tree) contains various tree implementations and related problems.
 
 ### Graphs
 
@@ -89,21 +88,21 @@ Heaps are specialized tree-based data structures that satisfy the heap property.
 
 ### Hash Tables
 
-Hash tables store key-value pairs and provide fast data retrieval. Check out our hash table implementations in the `DataStructures/HashTables` directory.
+Hash tables store key-value pairs and provide fast data retrieval. Check out our hash table implementations in [this directory](https://github.com/shitu13/DSA-Practice/tree/main/HashMap).
 
 ## Algorithms
 
 ### Sorting
 
-Sorting algorithms arrange elements in a particular order. Our implementations of various sorting algorithms can be found in the `Algorithms/Sorting` directory.
+Sorting algorithms arrange elements in a particular order. My implementations of various sorting algorithms can be found in [this directory](https://github.com/shitu13/DSA-Practice/tree/main/Sorting).
 
 ### Searching
 
-Searching algorithms are used to find elements within data structures. Visit the `Algorithms/Searching` directory for different searching techniques.
+Searching algorithms are used to find elements within data structures. Visit [this directory](https://github.com/shitu13/DSA-Practice/tree/main/Searching) for different searching techniques.
 
 ### Dynamic Programming
 
-Dynamic programming is a method for solving complex problems by breaking them down into simpler subproblems. Our dynamic programming solutions are in the `Algorithms/DynamicProgramming` directory.
+Dynamic programming is a method for solving complex problems by breaking them down into simpler subproblems. Our dynamic programming solutions are in [this directory]().
 
 ### Greedy Algorithms
 
