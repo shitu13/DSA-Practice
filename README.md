@@ -45,7 +45,7 @@ You can find my profiles on various coding platforms here:
 - **beecrowd:** [find me here](https://judge.beecrowd.com/en/users/statistics/133837)
 
 
-Feel free to check out my profiles to see my progress and achievements on these platforms.
+Feel free to check out my profiles to see my progress and achievements on these platforms. Btw, I often use [My Compiler](https://www.mycompiler.io/@shitu13) as a code compiler and [GitHub Gist](https://gist.github.com/shitu13) to paste codes. 
 
 ## Platforms
 
